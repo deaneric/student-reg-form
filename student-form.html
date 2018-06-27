@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="student-style.css"/>
+  <link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome-all.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="student-script.js"></script>
+  <title>Student Form</title>
+  </head>
+  <body>
+    <div class="grid-container">
+	  <div class="reg-body">
+	  <form id="registartion_form">
+	    <div class="field-container">
+	      <div class="label">
+		    <label for="f_name">First Name</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="text" id="f_name" name="fname" required="required"/>
+		  </div>
+	    </div>
+		<div class="field-container">
+	      <div class="label">
+		    <label for="l_name">Last Name</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="text" id="l_name" name="lname" required="required"/>
+		  </div>
+	    </div>
+		<div class="field-container">
+	      <div class="label">
+		    <label for="dob">D.O.B</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="date" id="dob" min="2000-01-02" required="required"/>
+		  </div>
+	    </div>
+		<div class="field-container">
+	      <div class="label">
+		    <label for="reg_email">Email</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="email" id="reg_email" required="required"/>
+		  </div>
+	    </div>
+		<div class="field-container">
+	      <div class="label">
+		    <label for="mob_no">Mobile Number</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="number" id="mob_no" required="required"/>
+		  </div>
+		  <span>(10 digit number)</span>
+	    </div>
+		<div class="field-container gender-container">
+	      <div class="label">
+		    <label for="gender">Gender</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="radio" name="gender" value="male" required="required"/> Male
+			<input type="radio" name="gender" value="female" required="required"/>Female
+		  </div>
+	    </div>
+		<div class="field-container address-container">
+	      <div class="label">
+		    <label for="address">Address</label>
+		  </div>
+		  <div class="input-container">
+		    <textarea rows="4" id="reg_address"></textarea>
+		  </div>
+	    </div>
+		<div class="field-container">
+	      <div class="label">
+		    <label for="city">City</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="text" id="city" required="required"/>
+		  </div>
+	    </div>
+		<div class="field-container">
+		  <div class="label">
+		    <label for="pincode">Pincode</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="number" id="pincode" required="required"/>
+		  </div>
+		</div>
+		<div class="field-container">
+		  <div class="label">
+		    <label for="state">State</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="text" id="state" required="required"/>
+		  </div>
+		</div>
+		<div class="field-container">
+		  <div class="label">
+		    <label for="country">Country</label>
+		  </div>
+		  <div class="input-container">
+		    <input type="text" id="country" required="required" value="India"/>
+		  </div>
+		</div>
+		<div class="hobbies-container">
+		  <div class="label">
+		    <label for="hobbies">Hobbies</label>
+		  </div>
+		  <div class="input-container">
+		    Drawing<input type="checkbox" value="drawing" name="hobby"/>
+			Singing<input type="checkbox" value="singing" name="hobby"/>
+			Dancing<input type="checkbox" value="dancing" name="hobby"/>
+			Sketching<input type="checkbox" value="sketching" name="hobby"/>
+		  </div>
+		</div>
+		<div class="qualifications">
+		  <div class="label">
+		    <label for="reg_qualification">Qualifications</label>
+		  </div>
+		  <!---TABLE SECTION--->
+		  <div class="input-container">
+		    <table id="reg_qualification">
+			  <tr>
+			    <th>SI. No.</th>
+				<th>Examination</th>
+				<th>Board</th>
+				<th>Percentage</th>
+				<th>Year of Passing</th>
+			  </tr>
+			  <tr>
+			    <td>1</td>
+				<td>Class X</td>
+				<td><input type="text" id="qua_10_board" required="required"></td>
+				<td><input type="number" id="qua_10_per" required="required"></td>
+				<td><input type="number" id="qua_10_year" required="required"></td>
+			  </tr>
+			  <tr>
+			    <td>2</td>
+				<td>Class XII</td>
+				<td><input type="text" id="qua_12_board" required="required"></td>
+				<td><input type="number" id="qua_12_per" required="required"></td>
+				<td><input type="number" id="qua_12_year" required="required"></td>
+			  </tr>
+			  <tr>
+			    <td>3</td>
+				<td>Graduation</td>
+				<td><input type="text" id="qua_grad" required="required"></td>
+				<td><input type="number" id="qua_grad_per" required="required"></td>
+				<td><input type="number" id="qua_grad_year" required="required"></td>
+			  </tr>
+			</table>
+		  </div>
+		</div>
+		<!---COURSE SECTION--->
+		<div class="course-container">
+		  <div class="label">
+		    <label for="reg_course">Courses Applied For</label>
+		  </div>
+		  <div class="input-container">
+		    M.C.A<input type="radio" name="reg_course" value="mca" required="required"/>
+			M.Tech<input type="radio" name="reg_course" value="mtech" required="required"/>
+			M.B.A<input type="radio" name="reg_course" value="mba" required="required"/>
+			M.Com<input type="radio" name="reg_course" value="mcom" required="required"/>
+		  </div>		  
+		</div>
+		<!---BUTTON SECTION--->
+		<div class="button-container">
+          <button type="submit" class="submit-btn" id="submit_btn">Submit</button>
+          <button type="reset" class="reset-btn" id="reset_btn">Reset</button>		  
+		</div>
+	  </form>	
+	  </div>
+	</div>
+  </body>
+</html>
