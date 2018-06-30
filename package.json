@@ -1,0 +1,13 @@
+{
+  "name": "student-registration",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "gulp-sass-style": "gulp sass",
+	"gulp-sass-watch": "gulp watch"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

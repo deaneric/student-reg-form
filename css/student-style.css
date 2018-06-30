@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box; }
+
+/***********REGISTRATION SECTION*******************/
+.reg-body {
+  grid-area: registration;
+  background-color: #e6e5e5;
+  width: 100%;
+  margin: 20px 0; }
+
+.label {
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  padding: 10px 25px;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
+.input-container {
+  display: inline-block;
+  max-width: 200px;
+  width: 100%; }
+
+/***********INPUT TAGS STYLE*******************/
+input[type=text], [type=number], [type=date], [type=email] {
+  width: 100%;
+  border: none;
+  padding: 5px 5px;
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: 0.5px; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/***********GRID SECTION*******************/
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-areas: '. registration .';
+  background-color: #afafaf;
+  margin: -8px -8px 0px -8px;
+  font-family: 'Archivo Narrow', sans-serif; }
+
+/***********ADDRESS STYLE*******************/
+.address-container .label {
+  vertical-align: top; }
+
+.address-container .input-container {
+  max-width: 400px; }
+
+.address-container textarea {
+  width: 100%;
+  padding: 5px 5px;
+  border: none;
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: 0.5px; }
+
+/***********HOBBIES STYLE*******************/
+.hobbies-container .input-container {
+  max-width: 400px; }
+  .hobbies-container .input-container input[type=checkbox] {
+    margin: 0 10px 0 5px; }
+
+/***********QUALIFICATION STYLE*******************/
+.qualifications .label {
+  vertical-align: top; }
+
+.qualifications .input-container {
+  max-width: 600px; }
+
+.qualifications table, .qualifications th, .qualifications td {
+  border: 1px black solid;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px 5px; }
+
+/***********COURSE STYLE*******************/
+.course-container {
+  margin: 0 0 10px 0; }
+  .course-container .input-container {
+    max-width: 400px; }
+  .course-container input[type="radio"] {
+    margin: 0 10px 0 5px; }
+
+/***********BUTTON STYLES*******************/
+.button-container {
+  text-align: center;
+  margin: 0px 0 10px 0; }
+  .button-container button {
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: white;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    font-weight: bold; }
+  .button-container .submit-btn {
+    background-color: #00b100;
+    color: white;
+    border: 1px solid #00b100; }
+    .button-container .submit-btn::hover {
+      background-color: #e6e5e5;
+      color: #00b100;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+  .button-container .reset-btn {
+    background-color: #615f5f;
+    color: white;
+    border: 1px solid #615f5f; }
+    .button-container .reset-btn:hover {
+      background-color: #e6e5e5;
+      color: #615f5f;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /***********GRID STYLE*******************/
+  .grid-container {
+    grid-template-columns: 2% 96% 2%; }
+  /***********INPUT CONTAINER STYLE*******************/
+  .input-container {
+    max-width: 250px;
+    margin: 0 0 10px 24px; }
+    .input-container textarea {
+      width: 85%;
+      padding: 0; }
+  .field-container span {
+    display: none; }
+  /***********GENDER STYLE*******************/
+  .gender-container .label {
+    max-width: 100px; }
+  .gender-container .input-container {
+    margin: 0px;
+    max-width: 150px; }
+  /***********QUALIFICATION STYLE*******************/
+  .qualifications .input-container {
+    margin: 0 0 10px 0px;
+    padding: 5px 2px; }
+  .qualifications table, .qualifications th, .qualifications td {
+    font-size: 0.9em;
+    padding: 5px 2px; } }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /***********ADDRESS STYLE*******************/
+  .address-container .input-container {
+    max-width: 200px; }
+  /***********HOBBIES STYLE*******************/
+  .hobbies-container .input-container {
+    max-width: 250px; }
+  .hobbies-container .label {
+    vertical-align: top; }
+  /***********QUALIFICATION STYLE*******************/
+  .qualifications .input-container {
+    max-width: 450px;
+    margin: 0 0px 0 50px; }
+  /***********COURSE STYLE*******************/
+  .course-container .input-container {
+    max-width: 300px; } }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /***********HOBBIES STYLE*******************/
+  .hobbies-container .input-container {
+    max-width: 400px; }
+  .hobbies-container .label {
+    vertical-align: baseline; }
+  /***********QUALIFICATION STYLE*******************/
+  .qualifications .input-container {
+    margin: 0; } }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
